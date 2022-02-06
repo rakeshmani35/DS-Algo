@@ -1,0 +1,52 @@
+package com.k.leaves.bt;
+
+import com.k.leaves.bt.PrintNodesHasKLeaves.Node;
+
+// https://www.youtube.com/watch?v=PArGIFNfIDk&list=PLeIMaH7i8JDj7DnmO7lll97P1yZjMCpgY&index=39
+public class PrintNumberOfLeafNode {
+
+	static class Node {
+		int data;
+		Node left;
+		Node right;
+
+		Node(int data) {
+			this.data = data;
+		}
+	}
+
+	static int count = 0;
+
+	public static void countLeavesNode(Node root) {
+
+		if (root == null) {
+			return;
+		}
+
+		if (root.left == null && root.right == null) {
+			count++;
+		}
+
+		countLeavesNode(root.left);
+
+		countLeavesNode(root.right);
+
+	}
+
+	public static void main(String[] args) {
+
+		Node root = new Node(1);
+		root.left = new Node(2);
+		root.right = new Node(3);
+		root.left.left = new Node(4);
+		root.left.right = new Node(5);
+		root.right.left = new Node(8);
+		root.right.left.left = new Node(9);
+
+		countLeavesNode(root);
+
+		System.out.println(count);
+
+	}
+
+}

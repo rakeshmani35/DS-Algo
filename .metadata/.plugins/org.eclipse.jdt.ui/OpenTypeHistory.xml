@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util(Iterator.class[Iterator" modifiers="1537" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.stream(Stream.class[Stream" modifiers="1537" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.concurrent(Exchanger.class[Exchanger" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.concurrent(ForkJoinPool.class[ForkJoinPool" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.concurrent(SynchronousQueue.class[SynchronousQueue" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.concurrent(LinkedBlockingQueue.class[LinkedBlockingQueue" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.concurrent(ConcurrentLinkedQueue.class[ConcurrentLinkedQueue" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.concurrent(ConcurrentHashMap.class[ConcurrentHashMap" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util(HashMap.class[HashMap" modifiers="33" timestamp="1574608338029"/>
+<typeInfo handle="=Array/C:\/Program Files\/Java\/jdk1.8.0_231\/jre\/lib\/rt.jar&lt;java.util.concurrent(DelayQueue.class[DelayQueue" modifiers="33" timestamp="1574608338029"/>
+</typeInfoHistroy>

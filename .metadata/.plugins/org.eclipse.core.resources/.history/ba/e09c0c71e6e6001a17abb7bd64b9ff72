@@ -1,0 +1,21 @@
+package com.opentext;
+
+public class ReverseWords {
+
+	public static void print(String input) {
+		
+		String[] split = input.split(" ");
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		String input = "taste the thunder";
+		
+		print(input); 
+
+	}
+
+}

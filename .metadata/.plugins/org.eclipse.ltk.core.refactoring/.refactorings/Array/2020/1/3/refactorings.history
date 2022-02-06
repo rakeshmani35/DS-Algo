@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;LargestSunContigousSubArray&apos; to &apos;LargestSumContigousSubArray&apos;&#x0D;&#x0A;- Original project: &apos;Array&apos;&#x0D;&#x0A;- Original element: &apos;LargestSunContigousSubArray&apos;&#x0D;&#x0A;- Renamed element: &apos;LargestSumContigousSubArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LargestSunContigousSubArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{LargestSunContigousSubArray.java[LargestSunContigousSubArray" matchStrategy="1" name="LargestSumContigousSubArray" qualified="false" references="true" similarDeclarations="false" stamp="1579317822835" textual="false" version="1.0"/>
+</session>

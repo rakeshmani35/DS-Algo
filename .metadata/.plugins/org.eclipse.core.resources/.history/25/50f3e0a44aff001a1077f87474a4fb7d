@@ -1,0 +1,10 @@
+package com.dp;
+
+// https://www.youtube.com/watch?v=rMLEZdtdAO8&list=PLCZJSEiJwWZ7kd4wXxIkFiU6mYXsCwYOC&index=11
+public class NStairsProblem {
+
+	public static void main(String[] args) {
+
+	}
+
+}

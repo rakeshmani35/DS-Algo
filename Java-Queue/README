@@ -1,0 +1,52 @@
+1. PriorityQueue
+================
+1. PriorityQueue is an unbounded queue and grows dynamically. The default initial capacity is '11' 
+   which can be overridden using initialCapacity parameter in appropriate constructor.
+2. It does not allow NULL objects.
+3. Objects added to PriorityQueue MUST be comparable.
+4. The objects of the priority queue are ordered by default in natural order.
+5. A Comparator can be used for custom ordering of objects in the queue.
+6. The head of the priority queue is the least element based on the natural ordering or comparator based 
+    ordering. When we poll the queue, it returns the head object from the queue.
+7. If multiple objects are present of same priority the it can poll any one of them randomly.
+8. PriorityQueue is not thread safe. Use PriorityBlockingQueue in concurrent environment.
+9. It provides O(log(n)) time for add and poll methods.
+
+
+2. PriorityBlockingQueue
+==========================
+1. PriorityBlockingQueue is an unbounded queue and grows dynamically. The default initial capacity is '11' 
+   which can be overridden using initialCapacity parameter in appropriate constructor.
+2. It supplies blocking retrieval operations.
+3. It does not allow NULL objects.
+4. Objects added to PriorityBlockingQueue MUST be comparable otherwise it throws ClassCastException.
+5. The objects of the priority queue are ordered by default in natural order.
+6. A Comparator can be used for custom ordering of objects in the queue.
+7. The head of the priority queue is the least element based on the natural ordering or comparator based 
+   ordering. When we poll the queue, it returns the head object from the queue.
+8. If multiple objects are present of same priority the it can poll any one of them randomly.
+9. PriorityBlockingQueue is thread safe.
+10. The Iterator provided in method iterator() is not guaranteed to traverse the elements of the PriorityBlockingQueue 
+    in any particular order. If you need ordered traversal, consider using Arrays.sort(pbq.toArray()).
+11. The drainTo() can be used to remove some or all elements in priority order and place them in another collection.
+
+
+
+3. ArrayBlockingQueue
+======================
+1. ArrayBlockingQueue is a bounded queue of fixed size backed by an array.
+2. It orders elements FIFO (first-in-first-out).
+3. Elements are inserted at the tail, and retrieved from the head of the queue.
+4. Once created, the capacity of the queue cannot be changed.
+5. It supplies blocking insertion and retrieval operations.
+6. It does not allow NULL objects.
+7. ArrayBlockingQueue is thread safe.
+8. The Iterator provided in method iterator() traverse the elements in order from first (head) to last (tail).
+9. ArrayBlockingQueue supports an optional fairness policy for ordering waiting producer and consumer threads. With 
+   fairness set to true, the queue grants threads access in FIFO order.
+   
+   
+   
+   
+   
+   

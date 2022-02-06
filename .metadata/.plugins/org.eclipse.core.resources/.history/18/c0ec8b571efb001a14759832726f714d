@@ -1,0 +1,56 @@
+package com.print.path;
+
+import java.util.ArrayList;
+
+// https://www.geeksforgeeks.org/print-the-longest-path-from-root-to-leaf-in-a-binary-tree/
+// https://www.youtube.com/watch?v=AIKUnInRL0M
+public class FindLongestPathFromRootToLeaf {
+
+	// Binary tree node
+	static class Node {
+		Node left;
+		Node right;
+		int data;
+	};
+
+	// Function to create a new Binary node
+	static Node newNode(int data) {
+		Node temp = new Node();
+
+		temp.data = data;
+		temp.left = null;
+		temp.right = null;
+
+		return temp;
+	}
+
+	// Function to find and return the longest path
+	// Post-Order Traversal
+	public static ArrayList<Integer> longestPath(Node root) {
+
+		if (root == null) {
+			ArrayList<Integer> output = new ArrayList<>();
+			return output;
+		}
+
+		// Recursive call on root.right
+		ArrayList<Integer> right = longestPath(root.right);
+
+		// Recursive call on root.left
+		ArrayList<Integer> left = longestPath(root.left);
+
+		return null;
+	}
+
+	public static void main(String[] args) {
+
+		Node root = newNode(1);
+		root.left = newNode(2);
+		root.right = newNode(3);
+		root.left.left = newNode(4);
+		root.left.right = newNode(5);
+		root.left.right.right = newNode(6);
+
+	}
+
+}

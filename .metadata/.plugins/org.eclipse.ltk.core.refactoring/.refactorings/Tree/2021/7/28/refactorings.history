@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static int extracted(Node root, int n, List&lt;Integer&gt; list)&apos; from &apos;com.ancestor.FindKthAncestorOfGivenOneNodes.findKthAncestor_Approach2()&apos; to &apos;com.ancestor.FindKthAncestorOfGivenOneNodes&apos;&#x0D;&#x0A;- Original project: &apos;Tree&apos;&#x0D;&#x0A;- Method name: &apos;extracted&apos;&#x0D;&#x0A;- Destination type: &apos;com.ancestor.FindKthAncestorOfGivenOneNodes&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;extracted&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.ancestor{FindKthAncestorOfGivenOneNodes.java" name="extracted" replace="false" selection="1243 307" stamp="1625937054465" version="1.0" visibility="2"/>
+</session>

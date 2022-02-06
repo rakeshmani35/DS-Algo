@@ -1,0 +1,34 @@
+package com.dp;
+
+// https://www.youtube.com/watch?v=rMLEZdtdAO8&list=PLCZJSEiJwWZ7kd4wXxIkFiU6mYXsCwYOC&index=11
+public class NStairsProblem {
+
+	// n= stairs, m = jump
+	public static int countWays(int n, int m) {
+
+		
+		if (n <= 2) {
+			return n;
+		} //else {
+			// if m=2
+		//	return countWays(n - 1, m) + countWays(stair - 1, m);
+		//}
+		
+		//approach 2
+		int count = 0;
+		for (int i = 1; i <= m; i++) {
+			count += countWays(n-i, m);
+		}
+	   return count;
+	}
+
+	public static void main(String[] args) {
+
+		int stair = 4;
+		int jump = 3;
+		
+		int countWays = countWays(stair, jump);
+		System.out.println(countWays);
+	}
+
+}

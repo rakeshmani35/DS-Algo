@@ -1,0 +1,11 @@
+package com.string;
+
+public class ShortStringByLength {
+
+	public static void main(String[] args) {
+		
+		String str = "this is kooks are as a book kooks";
+
+	}
+
+}

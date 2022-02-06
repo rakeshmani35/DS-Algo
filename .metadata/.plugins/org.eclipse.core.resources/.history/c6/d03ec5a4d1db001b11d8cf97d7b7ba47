@@ -1,0 +1,21 @@
+package com.stack;
+
+import java.util.Stack;
+
+// https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/
+/*
+ * Print stack without removing elements
+ */
+public class PrintStackBottomToTop {
+
+	static void PrintStack(Stack<Integer> s) {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

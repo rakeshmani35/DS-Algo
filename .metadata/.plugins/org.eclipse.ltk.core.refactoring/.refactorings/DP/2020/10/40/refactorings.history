@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.kadane.MaximumSubArray&apos; to &apos;MaxSumOfContiguousSubArray&apos;&#x0D;&#x0A;- Original project: &apos;DP&apos;&#x0D;&#x0A;- Original element: &apos;com.kadane.MaximumSubArray&apos;&#x0D;&#x0A;- Renamed element: &apos;com.kadane.MaxSumOfContiguousSubArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MaximumSubArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.kadane{MaximumSubArray.java[MaximumSubArray" matchStrategy="1" name="MaxSumOfContiguousSubArray" qualified="false" references="true" similarDeclarations="false" stamp="1601724733587" textual="false" version="1.0"/>
+</session>

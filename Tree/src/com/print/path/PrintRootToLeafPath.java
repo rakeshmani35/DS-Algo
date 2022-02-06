@@ -1,0 +1,114 @@
+package com.print.path;
+
+import java.util.Stack;
+
+/**
+ * InOrder traversal + Stack
+ * 
+ * @author rakes
+ *
+ */
+public class PrintRootToLeafPath {
+
+	static Stack<Character> stack = new Stack();
+	
+	static class Node {
+		char data;
+		Node left;
+		Node right;
+
+		public Node(char data) {
+			this.data = data;
+			left = null;
+			right = null;
+		}
+	}
+	
+	// In-Order way
+	public static void rootToLeaf(Node root) {
+		
+		if (root == null) {
+			return ;
+		}
+		
+		stack.push(root.data);
+		
+		// 1.
+		rootToLeaf(root.left);
+		
+		// 2.
+		//System.out.println(root.data);
+		if (root.left==null && root.right == null) {
+			//PrintStackRecurr(stack);
+			printStackIterative(stack);
+			//stack.forEach(System.out :: print);
+			System.out.println();
+		}
+		
+		// 3.
+		rootToLeaf(root.right);
+		
+		stack.pop();
+	}
+	
+	// Recursive function to print stack elements from bottom to top without changing their order
+	static void PrintStackRecurr(Stack<Character> s)  
+	{  
+	    // If stack is empty then return  
+	    if (s.isEmpty())  
+	        return;  
+	      
+	    //Looks at the object at the top of this stack without removing itfrom the stack.
+	    Character x = s.peek();  
+	  
+	    // Removes the object at the top of this stack and returns that object 
+	    s.pop();  
+	  
+	    // Recursively call the function PrintStack  
+	    PrintStackRecurr(s);  
+	  
+	    // Print the stack element starting from the bottom  
+	    System.out.print(x + " ");  
+	  
+	    // Push the same element onto the stack to preserve the order  
+	    s.push(x);  
+	}  
+	
+	public static void printStackIterative(Stack<Character> stack) {
+
+        // method 1:
+       // String values = Arrays.toString(stack.toArray());
+        //System.out.println(values);
+
+        // method 2:
+        Object[] vals = stack.toArray();
+        for (Object obj : vals) {
+            System.out.print(obj);
+        }
+        
+        // method 3: java8
+       // stack.forEach(System.out :: print);
+    }
+	
+	public static void main(String[] args) {
+
+		Node root = new Node('a');
+		root.left = new Node('b');
+		root.right = new Node('c');
+		root.left.left = new Node('d');
+		root.left.right = new Node('e');
+		root.right.left = new Node('f');
+		root.right.right = new Node('g');
+		
+		root.left.right.left = new Node('h');
+		root.left.right.right = new Node('i');
+		root.left.right.right.left = new Node('j');
+		root.left.right.right.right = new Node('k');
+		
+		root.right.right.right = new Node('m');
+		
+		rootToLeaf(root);
+		
+	}
+
+}

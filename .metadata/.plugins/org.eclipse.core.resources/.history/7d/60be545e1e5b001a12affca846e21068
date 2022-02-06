@@ -1,0 +1,60 @@
+package com.binary.tree;
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+
+public class VerticalOrderTraveral {
+
+	public static TreeMap<Integer, ArrayList> ht = new TreeMap<>();
+    public ArrayList<Integer> al;
+	
+	static class Node {
+		int data;
+		Node left;
+		Node right;
+
+		public Node(int data) {
+			this.data = data;
+			left = null;
+			right = null;
+		}
+	}
+
+	public  void verticalTraversal(Node root, int level) {
+		
+		if (root == null) {
+			return;
+		}
+		if (ht.containsKey(level)) {
+			ArrayList list = ht.get(level);
+			list.add(root.data);
+			ht.put(level, list);
+		}else {
+			al = new ArrayList<Integer>();
+			al.add(root.data);
+			ht.put(level, al);
+		}
+		verticalTraversal(root.left, level-1);
+		verticalTraversal(root.right, level+1);
+	}
+	
+	public void printResult(TreeMap ht) {
+        Set<Integer> i = ht.keySet();
+        for (int keys : i) {
+            System.out.println(ht.get(keys));
+        }
+    }
+	
+	public static void main(String[] args) {
+		Node root = new Node(1);
+		root.left = new Node(2);
+		root.right = new Node(3);
+		root.left.left = new Node(4);
+		root.left.right = new Node(5);
+		root.right.left = new Node(6);
+		root.right.right = new Node(7);
+		
+		VerticalOrderTraveral vertical = new VerticalOrderTraveral();
+	}
+
+}

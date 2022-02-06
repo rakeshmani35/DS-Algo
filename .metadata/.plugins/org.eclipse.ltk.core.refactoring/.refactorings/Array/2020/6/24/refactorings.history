@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.infix.postfix.prefix.InfixToPostfix&apos; to &apos;ConvertInfixToPostfix&apos;&#x0D;&#x0A;- Original project: &apos;Array&apos;&#x0D;&#x0A;- Original element: &apos;com.infix.postfix.prefix.InfixToPostfix&apos;&#x0D;&#x0A;- Renamed element: &apos;com.infix.postfix.prefix.ConvertInfixToPostfix&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;InfixToPostfix&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.infix.postfix.prefix{InfixToPostfix.java[InfixToPostfix" matchStrategy="1" name="ConvertInfixToPostfix" qualified="false" references="true" similarDeclarations="false" stamp="1591512831234" textual="false" version="1.0"/>
+</session>

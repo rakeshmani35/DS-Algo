@@ -1,0 +1,46 @@
+package com.dp;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class Test {
+
+	public static int segment(int x, List<Integer> space) {
+
+		HashMap<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
+
+		int count = 0;
+		for (int i = 1; i <= x; i++) {
+			count = 0;
+			List<Integer> list = new ArrayList<Integer>();
+			
+			for (int j = i-1; j < space.size(); j++) {
+				count++;
+				if (count <= x) {
+					list.add(space.get(j));
+				}else {
+					break;
+				}
+				map.put(i, list);
+			}
+		}
+
+		return x;
+	}
+
+	public static void main(String[] args) {
+
+		int x = 3;
+		List space = new ArrayList();
+		space.add(2);
+		space.add(5);
+		space.add(4);
+		space.add(6);
+		space.add(8);
+		
+		segment(x, space);
+		
+	}
+
+}

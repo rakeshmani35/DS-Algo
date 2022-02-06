@@ -1,0 +1,43 @@
+package com.opentext;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class MaximumOccuranceCharacter {
+
+	public static char maxOccu(String text) {
+		Map<String, Integer> map = new LinkedHashMap<>();
+
+		String key = null;
+		int value = 0;
+		String[] strArr = text.split("");
+		for (String str : strArr) {
+			if (map.containsKey(str)) {
+				map.put(str, map.get(str) + 1);
+			} else {
+				map.put(str, 1);
+			}
+		}
+
+		for (Map.Entry<String, Integer> entry : map.entrySet()) {
+			String k = entry.getKey();
+			int v = entry.getValue();
+
+			if (value < v) {
+				key = k;
+				value = v;
+			} 
+		}
+
+		return key.charAt(0);
+	}
+
+	public static void main(String[] args) {
+
+		String text = "aabcccddd";
+		char maxOccu = maxOccu(text);
+		
+		System.out.println(maxOccu);
+	}
+
+}

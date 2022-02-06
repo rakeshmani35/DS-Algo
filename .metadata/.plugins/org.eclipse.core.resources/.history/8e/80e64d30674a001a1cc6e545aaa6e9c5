@@ -1,0 +1,130 @@
+package com.level2;
+
+public class EmaSupercomputer {
+
+	static int twoPluses(String[] grid) {
+
+		int validPlus1 = 0;
+		int validPlus2 = 0;
+		
+		int firstValidPlus = 0;
+		int secondValidPlus = 0;
+		
+		int left = 0;
+		int right = 0;
+		int up = 0;
+		int down = 0;
+		
+		int h1Count = 0; // for horizontal cell count
+		int v1Count = 0; // for vertical cell count
+		
+		int h2Count = 0; // for horizontal cell count
+		int v2Count = 0; // for vertical cell count
+		
+		int move1 = 0; // restrict movement
+		int move2 = 0; // restrict movement
+		
+		int checkI = 0;
+		int checkJ = 0;
+
+		for (int i = 1; i < grid.length; i++) {
+			for (int j = 1; j < grid[0].length(); j++) {
+
+				if(i <= j) {
+					move1 = i;
+				}else {
+					move1 =j;
+				}
+				if (i > 0  && i <grid.length-1 && j > 0  && j <grid[0].length()-1) {
+                      left = i;
+                      right = i;
+                      up = j;
+                      down = j;
+                      move2=0;
+                      
+                     if (firstValidPlus == 0) {
+						 
+                    	 while(left>=0 && right<grid[i].length() && grid[i].charAt(left)==grid[i].charAt(right) && grid[i].charAt(left) == grid[i].charAt(i) 
+                    			 && move2<=move1) {
+                       	  if(left == right) {
+                       		  h1Count=1;
+                       	  }else {
+                       		  h1Count += 2;
+                       	  }
+                       	  left--;
+                       	  right++;
+                       	  move2++;
+                          
+                         }
+                         move2=0;
+                         while(up>=0 && down<grid[j].length() && grid[up].charAt(j)==grid[down].charAt(j) && grid[up].charAt(j) == grid[i].charAt(j)
+                        		 && move2<=move1) {
+                       	  if(up == down) {
+                       		  v1Count=1;
+                       	  }else {
+                       		  v1Count += 2;
+                       	  }
+                       	  up--;
+                       	  down++;
+                       	  move2++;
+                       	 
+                         }
+                         firstValidPlus = 1;
+                         if (h1Count == v1Count) {
+                        	 checkI = i;
+                        	 checkJ = j;
+						}
+					}
+
+                     if (firstValidPlus == 1 && secondValidPlus == 0 && (checkJ>j || checkI>i)) {
+ 						
+                    	 while(left>=0 && right<grid[i].length() && grid[i].charAt(left)==grid[i].charAt(right) && grid[i].charAt(left) == grid[i].charAt(i)
+                    			 && move2<=move1) {
+                       	  if(left == right) {
+                       		h2Count=1;
+                       	  }else {
+                       		  h2Count += 2;
+                       	  }
+                       	  left--;
+                       	  right++;
+                       	  move2++;
+                         }
+                         move2=0;
+                         while(up>=0 && down<grid[j].length() &&grid[up].charAt(j)==grid[down].charAt(j) && grid[up].charAt(j) == grid[i].charAt(j)
+                        		 && move2<=move1) {
+                       	  if(up == down) {
+                       		  v2Count=1;
+                       	  }else {
+                       		  v2Count += 2;
+                       	  }
+                       	  up--;
+                       	  down++;
+                       	  move2++;
+                         }
+                         secondValidPlus = 1;
+					}
+                     
+				}
+			}
+		}
+		  if (h1Count == v1Count) {
+			  validPlus1 = (h1Count + v1Count) - 1;
+			}
+		  if (h2Count == v2Count) {
+			  validPlus2 = (h2Count + v2Count) - 1;
+			}
+		
+		int toalArea = validPlus1 * validPlus2;
+		return toalArea;
+
+	}
+
+	public static void main(String[] args) {
+		
+		//String[] grid = {"BGBBGB","GGGGGG","BGBBGB","GGGGGG","BGBBGB","BGBBGB"};
+		String[] grid = {"GGGGGG","GBBBGB","GGGGGG","GGBBGB","GGGGGG"};
+		
+		twoPluses(grid);
+	}
+
+}

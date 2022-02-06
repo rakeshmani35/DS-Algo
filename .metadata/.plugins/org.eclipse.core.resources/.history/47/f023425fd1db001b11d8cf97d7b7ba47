@@ -1,0 +1,11 @@
+package com.stack;
+
+// https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/
+public class PrintStackBottomToTop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

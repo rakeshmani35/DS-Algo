@@ -1,0 +1,36 @@
+package com.binary.tree.view;
+
+import java.util.ArrayList;
+import java.util.List;
+
+// https://www.youtube.com/watch?v=c3SAvcjWb1E&list=PLeIMaH7i8JDj7DnmO7lll97P1yZjMCpgY&index=28
+// level order traversal + vertical order traversal
+public class TopViewOfBinaryTree {
+
+	private List<Integer> list = new ArrayList<Integer>();
+	
+	static class Node {
+		int data;
+		Node left, right;
+
+		Node(int item) {
+			data = item;
+			left = right = null;
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Node root = new Node(1);
+		root.left = new Node(2);
+		root.right = new Node(3);
+		root.left.left = new Node(4);
+		root.left.right = new Node(5);
+		root.right.left = new Node(6);
+		root.right.right = new Node(7);
+		root.left.left.left = new Node(8);
+		root.left.left.right = new Node(9);
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.string;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class ShortStringByLength {
+
+	public static void print(String str) {
+		
+		Map<Integer, String> map =  new TreeMap();
+		String[] arr = str.split(" ");
+		for (String s : arr) {
+			
+			int key = s.length();
+			if (map.containsKey(key)) {
+				String value = map.get(key);
+				map.put(key, value+" "+s);
+			}else {
+				map.put(key, s);
+			}
+		}
+		
+		map.forEach((key,value) -> System.out.println(value));
+	}
+	
+	public static void main(String[] args) {
+		
+		String str = "this is kooks are as a book kooks";
+
+		print(str);
+	}
+
+}

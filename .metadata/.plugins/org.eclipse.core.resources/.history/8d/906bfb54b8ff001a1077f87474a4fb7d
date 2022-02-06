@@ -1,0 +1,29 @@
+package com.dp;
+
+public class Test1 {
+
+	public static String maxSubstring(String s) {
+		String longestSub = "";
+		int length = 0;
+		int start = 0;
+		int prev = s.charAt(0);
+		for (int i = 1; i <= s.length(); ++i) {
+			if (i == s.length() || s.charAt(i) < prev) {
+				if (length < i - start) {
+					longestSub = s.substring(start, i);
+					length = i - start;
+				}
+				start = i;
+			}
+			prev = s.charAt(i);
+		}
+		;
+		return longestSub;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

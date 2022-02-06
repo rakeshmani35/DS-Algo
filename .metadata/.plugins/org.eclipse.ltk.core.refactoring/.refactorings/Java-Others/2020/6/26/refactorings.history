@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.inheritance.Arithmetic&apos; to &apos;InheritanceTest&apos;&#x0D;&#x0A;- Original project: &apos;Java-Others&apos;&#x0D;&#x0A;- Original element: &apos;com.inheritance.Arithmetic&apos;&#x0D;&#x0A;- Renamed element: &apos;com.inheritance.InheritanceTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Arithmetic&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.inheritance{Arithmetic.java[Arithmetic" matchStrategy="1" name="InheritanceTest" qualified="false" references="true" similarDeclarations="false" stamp="1593063521018" textual="false" version="1.0"/>
+</session>

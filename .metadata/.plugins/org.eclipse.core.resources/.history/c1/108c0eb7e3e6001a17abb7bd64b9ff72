@@ -1,0 +1,10 @@
+package com.opentext;
+
+public class MaximumOccuranceCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

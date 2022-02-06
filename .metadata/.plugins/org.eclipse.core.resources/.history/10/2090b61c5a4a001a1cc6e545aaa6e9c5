@@ -1,0 +1,23 @@
+package com.level2;
+
+public class EmaSupercomputer {
+
+	 static int twoPluses(String[] grid) {
+		 
+		 int validPlus1;
+		 int validPlus2;
+		 
+		 
+		 
+		return 0;
+
+
+	    }
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

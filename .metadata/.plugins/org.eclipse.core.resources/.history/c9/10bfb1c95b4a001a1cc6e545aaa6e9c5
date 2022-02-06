@@ -1,0 +1,50 @@
+package com.level2;
+
+public class EmaSupercomputer {
+
+	static int twoPluses(String[] grid) {
+
+		int validPlus1 = 1;
+		int validPlus2 = 1;
+		int left;
+		int right;
+		int up;
+		int down;
+		int hCount=1; // for horizontal cell count
+		int vCount; // for vertical cell count
+		int move1 = 0; // restrict movement
+		int move2 = 0; // restrict movement
+
+		for (int i = 0; i < grid.length; i++) {
+			for (int j = 0; j < grid[0].length(); j++) {
+
+				if(i <= j) {
+					move1 = i;
+				}else {
+					move1 =j;
+				}
+				if (i > 0  && i <grid.length-1 && j > 0  && j <grid[0].length()-1) {
+                      left = i;
+                      right = i;
+                      up = j;
+                      down = j;
+                      
+                      while(grid[i].charAt(left)==grid[i].charAt(right) && move2<=move1) {
+                    	  left--;
+                    	  right++;
+                    	  move2++;
+                      }
+				}
+			}
+		}
+
+		return 0;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,67 @@
+package com.binary.tree;
+
+import java.util.Stack;
+
+import com.binary.tree.VerticalOrderTraveral.Node;
+
+/**
+ * InOrder traversal + Stack
+ * 
+ * @author rakes
+ *
+ */
+public class PrintRootToLeafPath {
+
+	static Stack stack = new Stack();
+	
+	static class Node {
+		char data;
+		Node left;
+		Node right;
+
+		public Node(char data) {
+			this.data = data;
+			left = null;
+			right = null;
+		}
+	}
+	
+	
+	public static void inorder(Node root) {
+		
+		if (root == null) {
+			return ;
+		}
+		
+		stack.push(root.data)
+		
+		// 1.
+		inorder(root.left);
+		
+		// 2.
+		System.out.println(root.data);
+		
+		// 3.
+		inorder(root.right);
+	}
+	
+	public static void main(String[] args) {
+
+		Node root = new Node('a');
+		root.left = new Node('b');
+		root.right = new Node('c');
+		root.left.left = new Node('d');
+		root.left.right = new Node('e');
+		root.right.left = new Node('f');
+		root.right.right = new Node('g');
+		
+		root.left.right.left = new Node('h');
+		root.left.right.right = new Node('i');
+		root.left.right.right.left = new Node('j');
+		root.left.right.right.right = new Node('k');
+		
+		root.right.right.right = new Node('m');
+		
+	}
+
+}

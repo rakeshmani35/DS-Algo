@@ -1,0 +1,10 @@
+package com.kadane;
+
+public class MaxSumOfContiguousSubArrayCloseToK {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

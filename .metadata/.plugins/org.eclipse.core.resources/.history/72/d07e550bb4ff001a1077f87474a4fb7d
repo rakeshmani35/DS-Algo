@@ -1,0 +1,25 @@
+package com.dp;
+
+import java.util.List;
+
+public class Test {
+
+	public static int segment(int x, List<Integer> space) {
+		
+		
+		
+		
+		
+		
+		
+		
+		return x;
+	    }
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

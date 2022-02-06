@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.array.pairs.FindPairsOfSumIsX&apos; to &apos;FindPairsOfSumIsXOfTwoUnsortedArray&apos;&#x0D;&#x0A;- Original project: &apos;Array&apos;&#x0D;&#x0A;- Original element: &apos;com.array.pairs.FindPairsOfSumIsX&apos;&#x0D;&#x0A;- Renamed element: &apos;com.array.pairs.FindPairsOfSumIsXOfTwoUnsortedArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FindPairsOfSumIsX&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.array.pairs{FindPairsOfSumIsX.java[FindPairsOfSumIsX" matchStrategy="1" name="FindPairsOfSumIsXOfTwoUnsortedArray" qualified="false" references="true" similarDeclarations="false" stamp="1621751043976" textual="false" version="1.0"/>
+</session>

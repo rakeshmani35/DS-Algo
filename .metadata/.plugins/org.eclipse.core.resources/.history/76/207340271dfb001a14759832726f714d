@@ -1,0 +1,28 @@
+package com.print.path;
+
+// https://www.geeksforgeeks.org/print-the-longest-path-from-root-to-leaf-in-a-binary-tree/
+public class FindLongestPathFromRootToLeaf {
+
+	// Binary tree node
+	static class Node {
+		Node left;
+		Node right;
+		int data;
+	};
+
+	// Function to create a new Binary node
+	static Node newNode(int data) {
+		Node temp = new Node();
+
+		temp.data = data;
+		temp.left = null;
+		temp.right = null;
+
+		return temp;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
